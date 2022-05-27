@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>login</title>
+      <link rel="stylesheet" href="../css/login.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form id="loginForm">
+            <div class="field">
+               <input type="email" id="emailInput" required>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" id="passInput"  min="6" max="20" required>
+               <label>Password</label>
+            </div>
+            <div class="errorMsg" ></div>
+            <div class="content">
+            </div>
+            <div class="field">
+               <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+               Not a member? <a href="/signup">Signup now</a>
+            </div>
+         </form>
+      </div>
+
+      <script src="../js/fetch.js"></script>
+      <script src="../js/login.js"></script>
+   </body>
+</html>

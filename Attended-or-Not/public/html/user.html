@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Attended-or-Not</title>
+  </head>
+  <body>
+    <!-- start Nav -->
+    <nav>
+      <div class="title">
+        <h1 class="title">Attended Or Not</h1>
+      </div>
+      <div class="select-box">
+        <label for="cars">Choose a Program:</label>
+        <select name="Program" id="programs"></select>
+      </div>
+
+      <a href="./admin.html">
+        <button type="submit" class="search-btn">go to Admin</button>
+      </a>
+    </nav>
+
+    <div class="add-member-form">
+      <input type="text" placeholder="enter your name" class="input name-input" />
+      <input type="tel" placeholder="059-369-7580" class="input phone-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+      <input type="date" placeholder="pick date" class="input date-input" />
+      <button class="add-user-btn">Add User</button>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <table></table>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="../scripts/request.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 33%;
+  
+}
+
+.card .card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4%;
+    height: 80%;
+    background-color: #eee;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+    border-radius: 7px;
+}
+.card img {
+  mix-blend-mode: darken;
+  width: 100%;
+  border-radius: 7px;
+
+}
+.card i {
+  font-size: 20px;
+  color: #38cabc;
+  
+}
+.card .fa-cart-shopping {
+  position: absolute;
+  top: 15px; right: 15px;
+  z-index: 1;
+}
+.card .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  margin-top: 10px;
+}
+.card .details {
+  display: flex;
+  flex-direction: column;
+}
+.card i:hover , .card button:hover{
+  transform: scale(1.15);
+}
+.card .info .actions{
+  display: flex;
+  gap: 15px;
+
+}
+
+
+
+  @media (min-width :500px ) and (max-width:1000px) {
+    .card {
+      width: 50%;
+    }
+  } 
+
+  @media (max-width :500px) {
+    .card {
+      width: 100%;
+    }
+  } 

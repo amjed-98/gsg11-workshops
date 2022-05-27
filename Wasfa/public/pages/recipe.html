@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../styles/recipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="image/hamburger.png" />
+
+    <title>Wasfa</title>
+  </head>
+
+  <body>
+    <div class="ft-recipe">
+      <div class="ft-recipe__thumb">
+        <h3>Today's Featured Recipe</h3>
+        <img
+          src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg"
+          alt="Strawberry Waffle"
+        />
+      </div>
+
+      <div class="ft-recipe__content">
+        <header class="content__header">
+          <div class="row-wrapper">
+            <h2 class="recipe-title">Strawberry Waffle</h2>
+          </div>
+
+          <ul class="recipe-details">
+            <li class="recipe-details-item time">
+              <i class="fa-solid fa-clock"></i>
+              <span class="value">20</span>
+              <span class="title">Minutes</span>
+            </li>
+            <li class="recipe-details-item ingredients">
+              <i class="fa-solid fa-book-open"></i>
+              <span class="value">5</span><span class="title">Ingredients</span>
+            </li>
+            <li class="recipe-details-item servings">
+              <i class="fa-solid fa-user-large"></i>
+              <span class="value">4-6</span><span class="title">Serving</span>
+            </li>
+          </ul>
+        </header>
+
+        <p class="description">
+          There’s no better way to celebrate May being National Strawberry Month than by sharing a
+          sweet treat with your pup!!! Strawberries...
+        </p>
+
+        <footer class="content__footer">
+          <button class="viewRecipeBtn">View Recipe</button>
+        </footer>
+      </div>
+      <div class="back-card">
+        <h2 class="title">Ingredients:</h2>
+        <ul class="ingredients-list"></ul>
+        <footer class="content__footer">
+          <button class="flip-card-btn">Go back</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts/request.js"></script>
+    <script src="../scripts/recipe/recipe-logic.js"></script>
+    <script src="../scripts/recipe/recipe.js"></script>
+  </body>
+</html>

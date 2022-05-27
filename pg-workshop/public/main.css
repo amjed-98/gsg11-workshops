@@ -1,0 +1,63 @@
+/*Add styling below*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(235, 86, 0);
+  text-align: center;
+  padding-block: 1.1rem;
+  margin-inline: 3rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+}
+
+form input {
+  flex: 1;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+
+form button {
+  text-align: left;
+  width: 100px;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(235, 86, 0);
+}
+
+table {
+  width: 60vw;
+  text-align: left;
+  padding: 1rem;
+}
+
+tr:first-child {
+  border-bottom: 1px solid #777;
+}

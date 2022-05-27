@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.noTasks {
+  text-align: center;
+  color: #534cef;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.tasksNum {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}

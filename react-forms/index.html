@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>React Form</title>
+
+  <body>
+    <!-- These scripts will make React and ReactDOM globally available. -->
+    <script src="./../assets/react@16.8.6/umd/react.development.js"></script>
+    <script src="./../assets/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <!-- This will let us write JSX and ES6 in a script tag with a special type of "text/babel" -->
+    <script src="./../assets/babel-standalone@6.26.0/babel.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const root = document.getElementById('root');
+
+      class TempConverter extends React.Component {
+        state = { temp: '', converted: '', unit: '' };
+
+        fahrenheitToCelsius = (f) => Math.round(((f - 32) * 5) / 9);
+        celsiusToFahrenheit = (c) => Math.round((c * 9) / 5 + 32);
+
+        handleUnitChange = ({ target: { id } }) => {
+          if (id === 'celsius') {
+            this.setState({ unit: 'C', converted: this.fahrenheitToCelsius(this.state.temp) });
+            return;
+          }
+          this.setState({ unit: 'F', converted: this.celsiusToFahrenheit(this.state.temp) });
+        };
+
+        handleTempChange = ({ target: { value } }) => {
+          this.setState({ temp: value });
+          this.state.unit === 'celsius'
+            ? this.setState({ unit: 'C', converted: this.fahrenheitToCelsius(value) })
+            : this.state.unit === 'fahrenheit'
+            ? this.setState({ unit: 'F', converted: this.celsiusToFahrenheit(value) })
+            : null;
+        };
+
+        render() {
+          const { converted, unit } = this.state;
+          return (
+            <form>
+              <fieldset>
+                <legend>TempConverter</legend>
+
+                <label htmlFor='celsius'>
+                  Celsius
+                  <input
+                    onChange={this.handleUnitChange}
+                    type='radio'
+                    name='unit'
+                    id='celsius'
+                  />
+                </label>
+
+                <label htmlFor='fahrenheit'>
+                  Fahrenheit
+                  <input
+                    onChange={this.handleUnitChange}
+                    type='radio'
+                    name='unit'
+                    id='fahrenheit'
+                  />
+                </label>
+              </fieldset>
+
+              <label htmlFor='temp'>
+                Temperature
+                <input type='number' name='' id='temp' onChange={this.handleTempChange} />
+              </label>
+
+              <output>
+                {converted}
+                {unit}
+              </output>
+            </form>
+          );
+        }
+      }
+      const App = () => <TempConverter />;
+
+      ReactDOM.render(<App />, root);
+    </script>
+  </body>
+</html>

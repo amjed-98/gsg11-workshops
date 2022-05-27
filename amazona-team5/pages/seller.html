@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- ----------------------fontawesome ----------------------------- -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- start Header -->
+    <header>
+        <div class="header-content">
+            <div class="left">
+                <a href="../index.html" style='color:black;'>
+                    <i class="fab fa-cc-amazon-pay fa-3x" id="logo"></i>
+                </a>
+            </div>
+            <div class="right">
+                <div class="search-bar">
+                    <input type="text" placeholder="search products" />
+                </div>
+                <button class="add-item-btn">Add item</button>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- end Header -->
+    <div class="add-product-container">
+        <section class="add-product-form">
+            <div class="form-item">
+                <label class="form-label" for="product-name">Product Name:</label>
+                <input class="input" type="text" id="product-name" name="product-name" />
+            </div>
+            <div class="form-item">
+                <label class="form-label" for="product-details"> Details</label>
+                <input class="input" type="text" id="product-details" name="product-details" />
+            </div>
+            <div class="form-item">
+                <label class="form-label" for="product-image"> Product Image</label>
+                <input class="input" type="url" id="product-image" name="product-image" />
+            </div>
+            <div class="form-item">
+                <label class="form-label" for="product-price"> Price</label>
+                <input class="input" type="number" id="product-price" name="product-price" />
+            </div>
+            <div class="form-item-submit">
+                <div class="form-item">
+                    <label class="form-label" for="product-category"> Category</label>
+                    <select class="input" name="product-category" id="product-category">
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="kids">Kids</option>
+                        <option value="sport">Sport</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="product-submit" class="form-submit-button" type="submit" value="Add to my product">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- start products table -->
+    <div class="table">
+        <table class="products-table" id="products-table">
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        
+        </table>
+    </div>
+    <!-- end products table -->
+    <script  src="../scripts/logic.js"></script>
+    <script  src="../scripts/index.js"></script>
+</body>
+</html>

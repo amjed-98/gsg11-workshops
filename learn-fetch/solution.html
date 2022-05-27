@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Fetch & Promises</title>
+  </head>
+  <body>
+    <!-- <script>
+
+      /* TASK 1 */
+
+      const getUser = (username) =>
+        fetch(`https://api.github.com/users/${username}`).then((response) => response.json());
+
+      getUser('oliverjam').then(console.log).catch(console.error);
+
+      /* TASK 2 */
+
+      const getRepos = (user) => fetch(user.repos_url).then((response) => response.json());
+
+      getUser('oliverjam').then(getRepos).then(console.log).catch(console.error);
+
+      /* TASK 3 (BONUS) */
+
+      const oliverPromise = getUser('oliverjam');
+      const starsuitPromise = getUser('starsuit');
+
+      Promise.all([oliverPromise, starsuitPromise]).then(console.log).catch(console.error);
+    </script> -->
+
+    <script>
+      const getJson = (json) => json.json();
+      const log = console.log;
+
+      const access_token = `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`;
+      const headers = { authorization: `token${access_token}` };
+
+      const getUser = (username) =>
+        fetch(`https://api.github.com/users/${username}`, headers).then(getJson);
+      const getRepos = (userObject) => fetch(userObject.repos_url);
+
+      // getUser('amjed-98').then(getRepos).then(getJson).then(log);
+
+      const user1 = getUser('amjed-98');
+      const user2 = getUser('amjed-98');
+
+      Promise.all([user1, user2]).then(log);
+    </script>
+  </body>
+</html>

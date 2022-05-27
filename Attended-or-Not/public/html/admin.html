@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Add program</title>
+</head>
+<body>
+    <nav>
+        <div class="title">
+          <h1 class="title">Attended Or Not</h1>
+        </div>
+        <a href="user.html"><button class="view">VIEW MEMBERS</button></a>
+      </nav>
+    <div class="add-member-form">
+        <input type="text" placeholder="enter  program name" class="input name-program-input" />
+        <input type="number" placeholder=" number of sessions" class="input sessions-input" min="0"/>
+        <input type="number" placeholder=" time " class="input time-input" min="0" />
+        <button class="add-program-btn">Add Program</button>
+    </div>
+      <script type="module" src="../scripts/request.js"></script>
+      <script type="module" src="../scripts/admin.js"></script>
+
+    </body>
+</html>

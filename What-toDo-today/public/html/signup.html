@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/signup.css">
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="text">Sign Up</div>
+    <form  method="post">
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" id="name" name="name" required>
+             <div class="underline"></div>
+             <label for="name">Name</label>
+          </div>
+          <div class="input-data">
+             <input type="email"id="email" name="email" required>
+             <div class="underline"></div>
+             <label for="email">Email Address</label>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data">
+             <input type="password" id="password" name="password" minlength="6" required>
+             <div class="underline"></div>
+             <label for="password">Password</label>
+          </div>
+          <div class="input-data">
+             <input type="password"id="confirmsPassword" name="confirmsPassword" minlength="6" required>
+             <div class="underline"></div>
+             <label for="confirmsPassword">Confirms Password</label>
+          </div>
+       </div>
+       <div class="form-row submit-btn">
+        <div class="input-data">
+           <div class="inner"></div>
+           <input type="button" id="submitBtn" value="submit">         
+        </div>
+        <p class="error"></p>
+     </div>
+    </form>
+ </div>
+
+<script src="/js/signUp.js"></script>
+</body>
+</html>

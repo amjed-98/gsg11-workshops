@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --headlinesFont: 'Jost', sans-serif;
+  --bodyFont: 'Work Sans', sans-serif;
+  --wildWatermelon: #ff4f87;
+  --fuelYellow: #f0a035;
+  --textColor: #323232;
+  --white: #fff;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: var(--bodyFont);
+  color: var(--textColor);
+  line-height: 1.5;
+  background-image: linear-gradient(rgba(29, 21, 21, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../image/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: 10% 10%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+#header {
+  padding: 4vh 6vw;
+  font-size: 2rem;
+
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#title p {
+  font-size: 4rem;
+  margin-left: 5rem;
+  color: var(--white);
+}
+#search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 5vh;
+  padding: 5px;
+  width: 30vw;
+}
+#btn {
+  height: 5vh;
+  width: 2vw;
+
+  background-color: #ff4f87;
+  color: #fff;
+
+  font-size: 17px;
+  border: 1px solid grey;
+
+  border-radius: 5px;
+}
+#FoodCards {
+  padding: 4vh 6vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.FoodCard {
+  border-radius: 5px;
+  width: 20vw;
+  height: 58vh;
+  background-color: #fff;
+  margin-bottom: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+#recipeImg {
+  width: 20vw;
+  height: 30vh;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  margin-bottom: 1vh;
+}
+#desciption {
+  margin: 0 1vw;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+#divBtn {
+  margin-left: 2vw;
+}
+#desciption h1 {
+  font-size: 2rem;
+  padding: 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+#desciption p {
+  font-size: 1.2rem;
+  margin-top: 1vh;
+}
+#viewRecipeBtn {
+  width: 15vw;
+  color: #fff;
+  background-color: #ff4f87;
+  border: none;
+  height: 4vh;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  align-self: end;
+  transition: transform 200ms ease;
+  cursor: pointer;
+}
+#viewRecipeBtn:hover {
+  transform: translateY(-1px);
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+  #FoodCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .FoodCard {
+    width: 25vw;
+    height: 58vh;
+  }
+  #recipeImg {
+    width: 25vw;
+    margin-bottom: 1vh;
+  }
+  #viewRecipeBtn {
+    width: 20vw;
+  }
+  #btn {
+    width: 4vw;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 950px;
+  }
+
+  #FoodCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .FoodCard {
+    width: 25vw;
+    height: 60vh;
+  }
+  #recipeImg {
+    width: 25vw;
+    margin-bottom: 1vh;
+  }
+  #viewRecipeBtn {
+    width: 20vw;
+  }
+  #divBtn {
+    margin-left: 2vw;
+  }
+  #btn {
+    width: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  #FoodCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .FoodCard {
+    width: 35vw;
+    height: 60vh;
+  }
+  #recipeImg {
+    width: 35vw;
+    margin-bottom: 1vh;
+  }
+
+  #viewRecipeBtn {
+    width: 30vw;
+  }
+  #btn {
+    width: 4vw;
+  }
+  #search {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 550px;
+  }
+  #header {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #btn {
+    width: 6vw;
+  }
+  #search {
+    width: 60vw;
+  }
+  #FoodCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .FoodCard {
+    width: 70vw;
+    height: 58vh;
+    margin-left: 0;
+  }
+  #recipeImg {
+    width: 70vw;
+    height: 30vh;
+    margin-bottom: 1vh;
+  }
+  #viewRecipeBtn {
+    width: 60vw;
+  }
+  #divBtn {
+    margin-left: 3vw;
+  }
+}

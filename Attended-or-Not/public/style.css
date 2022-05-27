@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+:root {
+  --main-color: rgb(13, 64, 116);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+
+}
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+@media (min-width: 567px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+#main {
+  background-image: url(https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+}
+/* Nav Section */
+#main::before{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  background-color: rgba(182, 179, 179, 0.36);
+  height: 100%;
+}
+.main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+.main p {
+  margin-bottom: 30px;
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.main h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.main .main-btns{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  
+} 
+.main .main-btns button{
+  padding: 10px;
+  width: 130px;
+  font-size: 18px;
+}
+.main .main-btns  button:hover {
+  transform: scale(1.2);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 0 0 0;
+  color: var(--main-color);
+  box-shadow: 0 0 5px 5px #eee;
+  padding: 1rem;
+}
+
+nav .title {
+  flex: 1;
+  color: rgb(13, 64, 116);
+}
+nav .select-box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 350px;
+}
+nav .select-box  select{
+  height: 100%;
+  border: 1px solid #eee;
+  padding: 5px;
+  outline: none;
+}
+nav .search-form {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+:is(nav .search-form) .search-input,
+.search-btn {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+nav .search-form .search-input {
+  flex: 1;
+  border: 1px solid #eee;
+}
+
+.add-member-form {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 83%;
+  margin-top: 3rem;
+  padding: 10px;
+
+}
+
+.add-member-form .input {
+  width: 30%;
+  margin-right: 10px;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #eee;
+
+}
+
+.add-user-btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  font-weight: bold;
+  color: white;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 5px;
+}
+.content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  border-spacing: 0;
+}
+table {
+  width: 100%;
+  border-spacing: 0px;
+  box-shadow: rgba(139, 136, 136, 0.25) 0px 17px 10px -12px;
+  border-radius: 10px;
+}
+
+.content table td,
+th {
+  border: #eee solid 0.3px;
+  padding: 15px;
+  font-size: 18px;
+}
+.content .btns {
+  display: flex;
+  justify-content: flex-end;
+}
+ button {
+  border: none;
+  padding: 7px;
+  border-radius: 3px;
+  background-color: var(--main-color);
+  width: 110px;
+  margin-left: 10px;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+
+}
+.content .btns button:hover {
+  transform: scale(1.2);
+}

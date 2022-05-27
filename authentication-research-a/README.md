@@ -1,0 +1,6 @@
+# Week7 Research Topics (authentication)
+- [HTTP vs HTTPS](./httpVShttps.md)
+- [Stateless vs stateful authentication](./statelessVSstateful.md)
+- [Session-management in Express](./express-session.md)
+- [Attacks](./attacks.md)
+- [OAuth](./OAuth.md)

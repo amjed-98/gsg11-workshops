@@ -1,0 +1,14 @@
+{
+  "name": "doubly_linked_lists_exercise",
+  "version": "1.0.0",
+  "description": "For this exercise you must get the tests to pass.",
+  "main": "doublyLinkedList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "attended-or-not",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": "cross-env NODE_ENV=dev nodemon src",
+    "test": "cross-env NODE_ENV=test jest "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/Attended-or-Not.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/Attended-or-Not/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/Attended-or-Not#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "env2": "^2.2.2",
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
+  }
+}

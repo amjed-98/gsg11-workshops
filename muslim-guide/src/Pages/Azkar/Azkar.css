@@ -1,0 +1,66 @@
+.azkar-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.azkar-cards .container {
+  justify-items: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.azkar-cards .azkar-card {
+  color: white;
+  padding: 1rem 4rem;
+  flex-basis: 100%;
+  border-radius: 1rem;
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.azkar-cards .azkar-card:hover {
+  filter: drop-shadow(2px 4px 6px #aaa);
+}
+
+.searchAzkarForm {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.searchAzkarForm .searchAzkarInput {
+  width: 90%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 20px 0px #aaa;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  caret-color: red;
+  text-align: right;
+}
+
+.noAzkarFound {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+}
+
+@media (min-width: 767px) {
+  .azkar-cards .container {
+    gap: 5.5rem;
+  }
+  .azkar-cards .azkar-card {
+    flex-basis: 45%;
+    font-size: 2.2rem;
+  }
+
+  .searchAzkarForm .searchAzkarInput {
+    width: 50%;
+  }
+}

@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* good luck :) */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.slid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  flex: 1;
+  transition: 1s;
+}
+
+.slid img {
+  height: 100%;
+  transition: 1s 0.4s;
+}
+
+.slid .title {
+  position: absolute;
+  padding: 1em;
+  z-index: 4;
+  color: white;
+  font-size: 1.8em;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.slid:hover {
+  flex: 2;
+  filter: brightness(50%);
+}
+.slid:hover img {
+  transform: scale(1.3) skew(3deg);
+}
+
+.slid:hover .title {
+  opacity: 1;
+}

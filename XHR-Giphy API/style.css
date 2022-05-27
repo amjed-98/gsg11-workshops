@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+}
+input {
+    display: block;
+    margin: 100px auto;
+    padding: 1em;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.imgHolder {
+    box-shadow: 0px 0px 7px 2px lightgrey;
+    line-height: 4;
+    border-radius: 11px;
+    padding: 1em;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+img {
+    transition: all 0.2s;
+}
+
+.imgHolder:hover img {
+    filter: grayscale(80%);
+}

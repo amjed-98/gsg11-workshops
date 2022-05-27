@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Fruit Market</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__container">
+        <nav class="navbar__nav" role="navigation">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="/">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link navbar__link--active" href="/login">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__container--limited-width">
+        <h1 class="main__title">Login</h1>
+        <form class="fruit-form" action="/login" method="post">
+          <label class="fruit-form__label" for="name">Name</label>
+          <input
+            class="fruit-form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            pattern="[A-Za-z]{2,20}"
+            title="At least two letters"
+            required
+            autocomplete="off"
+          />
+          <label class="fruit-form__label" for="image_url"> Email</label>
+          <input
+            class="fruit-form__input"
+            type="email"
+            name="email"
+            id="image_url"
+            placeholder="Email"
+            required
+            autocomplete="off"
+          />
+          <input class="fruit-form__btn" type="submit" value="Submit" />
+        </form>
+      </section>
+      <h2 class="welcome_msg"></h2>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p>© 2017 try middlewares</p>
+        <p><a href="#">try middlewares</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/fruit-fav.js"></script>
+  </body>
+</html>

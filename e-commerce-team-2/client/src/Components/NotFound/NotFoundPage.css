@@ -1,0 +1,19 @@
+.container-notFound{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.container-notFound .main-text{
+  font-size: 25px;
+}
+.container-notFound .p-text{
+  font-size: 20px;
+}
+.container-notFound img{
+  width: 40%;
+}

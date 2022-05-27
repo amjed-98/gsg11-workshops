@@ -1,0 +1,30 @@
+header{
+    background-color: #E9EEF7;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15%;
+}
+
+h1 {
+    font-size: 35px;
+    animation: animations 2s ease-in ;
+}
+.createTask{
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 10px;
+
+}
+
+.createTask:hover{
+    transform: scale(1.06);
+}
+
+@keyframes animations {
+    0% {
+        transform: translateY(-20px);
+    }
+}

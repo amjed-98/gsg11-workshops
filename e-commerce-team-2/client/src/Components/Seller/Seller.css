@@ -1,0 +1,13 @@
+.action {
+  text-align: center;
+  margin-top: 10rem;
+}
+.action .btn {
+  padding: 5px 20px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.action .btn:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cookies-ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-7/cookies-ws.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ali-7/cookies-ws/issues"
+  },
+  "homepage": "https://github.com/ali-7/cookies-ws#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

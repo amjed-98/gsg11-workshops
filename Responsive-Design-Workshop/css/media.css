@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+  /* your code should be written here  */
+  .container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  /* your code should be written here  */
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .grid-content-tile {
+    width: calc(50% - 4rem);
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  /* your code should be written here */
+  .grid-content {
+    flex-wrap: nowrap;
+  }
+}

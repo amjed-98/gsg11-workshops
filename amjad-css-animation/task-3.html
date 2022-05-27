@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .btns {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button {
+        padding: 1em 3em;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.5em;
+        margin: 1.5em;
+        background-color: rgb(41, 97, 41);
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      .pressed {
+        box-shadow: 0px 0px 10px 7px black;
+      }
+
+      img {
+        animation: img 10s ease-in-out forwards;
+        animation-play-state: paused;
+        transform: translateY(300%);
+      }
+
+      .text {
+        animation: text 1.3s 9.5s ease-in-out forwards;
+        animation-play-state: paused;
+        font-style: italic;
+        font-size: 1.5em;
+        color: red;
+        transform: translateY(1200%);
+      }
+
+      @keyframes img {
+        25% {
+          opacity: 0.2;
+          transform: translateY(-200%);
+        }
+
+        50% {
+          opacity: 0.4;
+          transform: translateY(300%);
+        }
+
+        75% {
+          opacity: 0.6;
+          transform: translateY(100%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+      @keyframes text {
+        100% {
+          transform: translateY(0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>you can pause and play the animation at any given time</h2>
+    <div class="btns">
+      <button class="play">play</button>
+      <button class="pause">pause</button>
+    </div>
+    <img id="img" src="./istockphoto-1281804798-170667a.jpg" alt="" />
+    <p class="text">I am so Cool</p>
+
+    <script>
+      const $img = document.getElementById('img');
+      const $playBtn = document.querySelector('.play');
+      const $pauseBtn = document.querySelector('.pause');
+      const $text = document.querySelector('.text');
+
+      $playBtn.addEventListener('click', () => {
+        $playBtn.classList.add('pressed');
+        $img.style.webkitAnimationPlayState = 'running';
+        $text.style.webkitAnimationPlayState = 'running';
+
+        setTimeout(() => $playBtn.classList.remove('pressed'), 100);
+      });
+
+      $pauseBtn.addEventListener('click', () => {
+        $pauseBtn.classList.add('pressed');
+        $img.style.webkitAnimationPlayState = 'paused';
+        $text.style.webkitAnimationPlayState = 'paused';
+
+        setTimeout(() => $pauseBtn.classList.remove('pressed'), 100);
+      });
+    </script>
+  </body>
+</html>

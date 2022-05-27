@@ -1,0 +1,22 @@
+{
+    "name": "todo-by-tdd-amjed-98",
+    "version": "1.0.0",
+    "description": "#### This project is from [Founders and Coders ](https://github.com/GSG-G8/master-reference/tree/master/coursebook/week-2/project)",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GSG-G11/todo-by-tdd-amjed-98.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GSG-G11/todo-by-tdd-amjed-98/issues"
+    },
+    "homepage": "https://github.com/GSG-G11/todo-by-tdd-amjed-98#readme",
+    "devDependencies": {
+        "jest": "^27.4.7"
+    }
+}
